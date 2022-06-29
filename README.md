@@ -1,7 +1,17 @@
-# hashicat-aws
-Hashicat: A terraform built application for use in Hashicorp workshops
+# Chapter 6. collaboration-aws
+A terraform built application for use in Terraform Education program
 
-Includes "Meow World" website.
+- Includes AWS Resources
+  - VPC
+  - Subnet
+  - Security group
+  - Internet gateway
+  - Route table
+  - EIP
+  - EC2 instance
+  - Key pair
 
-[![CircleCI](https://circleci.com/gh/hashicorp/hashicat-aws.svg?style=svg)](https://circleci.com/gh/hashicorp/hashicat-aws)
+- Day 2 Provisioning (null_resource)
+  - `file` provisioner
+  - `remote-exec` provisioner
 
