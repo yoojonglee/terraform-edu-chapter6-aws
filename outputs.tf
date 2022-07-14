@@ -1,7 +1,13 @@
 output "catapp_url" {
-  value = "http://${aws_eip.hashicat.public_dns}"
+  value = {
+    for instance in aws_instance.hashicat:
+      instance.id => "http://${instance.public_dns}"
+  }
 }
 
 output "catapp_ip" {
-  value = "http://${aws_eip.hashicat.public_ip}"
+  value = {
+    for instance in aws_instance.hashicat:
+      instance.id => "http://${instance.public_ip}"
+  }
 }
